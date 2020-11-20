@@ -6,16 +6,21 @@
 Simple test-driven redux-form fields validation
 
 ## Install
+
 ```
 yarn add redux-form-field-validation
 ```
-or 
+
+or
+
 ```
 npm i redux-form-field-validation
 ```
 
 ## Usage
+
 MyForm.js
+
 ```js
 import { required, email } from 'redux-form-field-validation';
 
@@ -32,7 +37,9 @@ import { required, email } from 'redux-form-field-validation';
 
 ...
 ```
+
 Input.js
+
 ```js
 ...
 
@@ -59,17 +66,19 @@ const Input = ({
 ...
 
 ```
+
 ## API
 
-| Property        | Description           | Error message | Note |
-| -------------   |---------------------|--------------|-----|
-| email           | checks email validity | InvalidEmail   | According to RFCs. Taken from emailregex.com|
-| required        | makes field required  | Required       ||
-| intlPhoneNumber | international phone number | InvalidIntlPhoneNumber | starts with "+" and does not contain spaces |
-| positiveNumber  | checks if a number is bigger than zero | InvalidPositiveNumber |  |
-| negativeNumber  | checks if a number is smaller than zero | InvalidNegativeNumber |  |
-
+| Property        | Description                             | Error message          | Note                                         |
+| --------------- | --------------------------------------- | ---------------------- | -------------------------------------------- |
+| email           | checks email validity                   | InvalidEmail           | According to RFCs. Taken from emailregex.com |
+| required        | makes field required                    | Required               |                                              |
+| intlPhoneNumber | international phone number              | InvalidIntlPhoneNumber | starts with "+" and does not contain spaces  |
+| positiveNumber  | checks if a number is bigger than zero  | InvalidPositiveNumber  |                                              |
+| negativeNumber  | checks if a number is smaller than zero | InvalidNegativeNumber  |                                              |
 
 ## Dependencies
+
 none!
+
 # npm-form-package
